@@ -10,14 +10,19 @@ const Table = ({ sat }) => {
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>Row Data TBD</td>
-         
-          
-        </tr>
+      {sat.map((id, data) => {
+          return (
+            <tr key={id}>
+              <td>{id.name}</td>
+              <td>{id.type}</td>
+              <td>{id.launchDate}</td>
+              <td>{id.data}</td>
+            </tr>
+          )
+        })}
       </tbody>
     </table>
-  )
+  );
 };
 
 export default Table;
