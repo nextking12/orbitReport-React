@@ -1,3 +1,5 @@
+import  "./styling.css";
+
 const Table = ({ sat }) => {
   return (
     <table>
@@ -16,7 +18,7 @@ const Table = ({ sat }) => {
               <td>{id.name}</td>
               <td>{id.type}</td>
               <td>{id.launchDate}</td>
-              <td>{id.operational === true ? "true" : "false"}</td>
+              <td>{id.operational === true ? "Active" : "Inactive"}</td>
             </tr>
           )
         })}
